@@ -1,0 +1,66 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+} /*set all text to be custom font*/
+
+body {
+    background-color: rgb(252, 255, 191);
+} /* Set the bg Color */
+
+#MMTitle {
+    color: salmon;
+    border-style: groove;
+    border-color: salmon;
+    border-width: 2ex;
+    border-radius: .5cm;
+    text-align: center;
+} /*Center the page title, color it pink and add a border*/
+
+h2 {
+    text-align: center;
+    text-decoration: rgb(173, 101, 146) wavy underline;
+    color: #39254d;
+} /*give the headers a color and wavy line, align center*/
+
+#Date {
+    color: hsla(346, 47%, 49%);
+    padding-bottom: 30px;
+    text-align: center;
+} /*have date much higher than nav, purple, and align center*/
+
+.Attendance {
+    color:darkgoldenrod;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+} /*center the attendance list using flex, color gold*/
+
+ul img{
+    border-radius: 50px;
+} /*all images in list have radius*/
+
+#lm + p {
+    color: rgb(43, 184, 137);
+    margin-left: 30px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+p > span {
+    color: darkred;
+}
+
+h3 ~ p {
+    margin-right: 100px;
+}
+
+#qs.header{
+    color: rgb(248, 7, 7);
+}
+
+
+
+
+
+
+
