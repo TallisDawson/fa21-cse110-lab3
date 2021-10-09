@@ -2,18 +2,27 @@
     font-family: 'Ubuntu', sans-serif;
 } /*set all text to be custom font*/
 
+@media (max-width: 3in) {
+    body {
+        background-color: lightpink;
+    }
+}/*change bg color if on phone*/
+
 body {
     background-color: rgb(252, 255, 191);
 } /* Set the bg Color */
 
 #MMTitle {
+    background-color: rgb(252, 255, 191);
     color: salmon;
     border-style: groove;
     border-color: salmon;
     border-width: 2ex;
-    border-radius: .5cm;
+    border-radius: 6vw;
     text-align: center;
-} /*Center the page title, color it pink and add a border*/
+    position: sticky;
+    top: 20px;
+} /*Center the page title, color it pink and add a border, make it sticky*/
 
 h2 {
     text-align: center;
@@ -24,8 +33,14 @@ h2 {
 #Date {
     color: hsla(346, 47%, 49%);
     padding-bottom: 30px;
+    padding-top: 1lh;
     text-align: center;
 } /*have date much higher than nav, purple, and align center*/
+
+summary {
+    position: relative;
+    top:20px; left: 100px;
+}/*move navigation over*/
 
 
 .Attendance {
@@ -45,6 +60,7 @@ ul img{
     margin-left: 30px;
     margin-bottom: 40px;
     margin-top: 30px;
+    max-width: 50px;
 }
 
 p > span {
@@ -69,20 +85,53 @@ img[src*="bee"] {
 label + p {
     border: 3px groove purple;
     margin: 10px 70px 10px 30px;
+    max-width: 300px;
 }
 
-label {
+/*make a grid for all the recordings to be in 3 coluns*/
+#recordings {
     display: grid;
-    grid-template-columns: repeat(3, 200px [col-start]);
+    grid-template-columns: repeat(3, 33% [col-start]);
+    grid-template-rows: 1, 100%;
 }
 
+.vRec {
+    grid-column: 1 / 2;
+}
+
+.aRec {
+    grid-column: 2 / 3;
+}
+
+.pic, img[src*="bee"] {
+    grid-column: 3;
+}
+
+
+fieldset {
+    display: inline;
+    min-width: 30%;
+    padding-left: 200px;
+}
+
+#sub {
+    padding: 200px 60px 20px;
+}
+
+input,label {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+/*Button styling*/
 button {
-    height: 30px;
+    height: 1cm;
     width: 300px;
     border-radius: 10%;
     border-style: hidden;
     background-color: darkturquoise;
     margin: auto;
+    min-width: 400px;
 }
 
 /*button colors when interacted with */
@@ -93,8 +142,3 @@ button:hover {
 button:active {
     background-color: rgb(145, 255, 0);
 }
-
-
-
-
-

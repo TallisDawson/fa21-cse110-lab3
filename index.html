@@ -41,7 +41,7 @@
                 </ul>
             </div>
             <hr>
-            <div>
+            <div id="AgendaSec">
                 <h2 id="Agenda">Agenda</h2>
 
                 <h3 id="lm" class="header">From last meeting</h3>
@@ -57,17 +57,20 @@
                 <p>Where is the bathroom?</p>
             </div>
             <hr>
-            <Section>
-                <h2 id="recs">Meeting recordings</h2>
-                <h4>Video</h4>
-                <video width="300" height="200" controls>
+            <h2 id="recs">Meeting recordings</h2>
+            <Section id="recordings">
+                
+                <h4 class="vRec">Video</h4>
+                <h4 class="aRec">Audio</h4>
+                <h4 class="pic">Diagrams</h4>
+                <video class="vRec" width="300" height="200" controls>
                     <source src="bees_meeting.mp4" type="video/mp4">
                 </video>
-                <h4>Audio</h4>
-                <audio controls>
+                
+                <audio class="aRec" controls>
                     <source src="bees_meeting.mp3" type="audio/mp3">
                 </audio>
-                <h4>Diagrams</h4>
+                
                 <img src="bee.png" alt="poorly drawn bee" width="200" height="200">
             </Section>
             
@@ -76,7 +79,7 @@
 
         </main>
         <footer>
-            <h5><em>SUBSCRIBE!!!!</em></h5>
+            <h5 id="sub"><em>SUBSCRIBE!!!!</em></h5>
             <form>
                 <fieldset>
                     <input type="text" placeholder="email" />
@@ -121,3 +124,4 @@
 
     </body>
 </html>
+
